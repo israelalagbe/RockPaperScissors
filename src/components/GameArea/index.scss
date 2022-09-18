@@ -1,0 +1,79 @@
+.game-area{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    background-color: #424242;
+    height: 100%;
+    
+   
+    .game-updates{
+        height: 13rem;
+        .versus{
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: white;
+            margin-bottom: 3rem;
+            .versus-text{
+                color: #CFAE7D;
+                margin: 0 3rem;
+                font-size: 2rem;
+            }
+        }
+        .winner{
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: white;
+            margin-bottom: 3rem;
+            color: #D4B37F;
+
+            .loss{
+                color: #E31642;
+            }
+            .won{
+                color: #19C359;
+            }
+            .winner-text{
+                margin: 0 4rem;
+                font-size: 3rem;
+            }
+            .amount{
+                color: white;
+            }
+        }
+    }
+    
+
+    .instruction{
+        color: #C8A979;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    .choices{
+        height: 8.9rem;
+        width: 100%;
+        max-width: 35rem;
+        margin-bottom: 6rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .action-btn{
+        background-color: #070707;
+        border: 4px solid #B49D75;
+        color: #D4B17F;
+        font-size: 2.4rem;
+        padding: 1.6rem 4.5rem;
+        border-radius: 10rem;
+
+        &:disabled{
+            border: 4px solid #4C4539;
+            color: #4C4539;
+        }
+    }
+}

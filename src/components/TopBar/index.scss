@@ -1,0 +1,29 @@
+.topbar{
+    height: 3rem;
+    background: #161616;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .key, .value{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .key{
+        color: #CFAE7D;
+        margin-right: 0.2rem;
+    }
+    .value{
+        margin-right: 3rem;
+    }
+
+    @media screen and (max-width: 768px){
+        .key, .value{
+            font-size: 1.2rem;
+        }
+        .value{
+            margin-right: 1.3rem;
+        }
+    }
+}
