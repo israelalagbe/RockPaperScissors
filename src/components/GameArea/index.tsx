@@ -19,7 +19,7 @@ function GameArea() {
 
   const onPlay = () => {
     if (balance <= 0) {
-        alert("You don\'t have enough balance to play");
+        alert("You don't have enough balance to play");
         return;
     } 
     play();
