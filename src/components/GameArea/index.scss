@@ -21,6 +21,14 @@
                 margin: 0 3rem;
                 font-size: 2rem;
             }
+
+            @media screen and (max-width: 768px){
+                font-size: 1.5rem;
+                .versus-text{
+                    font-size: 1.5rem;
+                    margin: 0 1rem;
+                }
+            }
         }
         .winner{
             text-align: center;
@@ -44,6 +52,14 @@
             .amount{
                 color: white;
             }
+
+            @media screen and (max-width: 768px){
+                font-size: 1.2rem;
+                .winner-text{
+                    font-size: 2.5rem;
+                    margin: 0 2rem;
+                }
+            }
         }
     }
     
@@ -61,6 +77,9 @@
         margin-bottom: 6rem;
         display: flex;
         justify-content: space-around;
+        @media screen and (max-width: 768px){
+            margin-bottom: 3rem;
+        }
     }
 
     .action-btn{
@@ -74,6 +93,11 @@
         &:disabled{
             border: 4px solid #4C4539;
             color: #4C4539;
+        }
+
+        @media screen and (max-width: 768px){
+            font-size: 1.8rem;
+            padding: 1.2rem 3.5rem;
         }
     }
 }

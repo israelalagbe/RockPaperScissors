@@ -17,7 +17,7 @@ function GameArea() {
         ) : null}
         {step === "result" ? (
           <div className="winner">
-            <div className={`winner-text ${currentWon > 0 ? "won" : "loss"}`}>{{winner?.toUpperCase()} </div>
+            <div className={`winner-text ${currentWon > 0 ? "won" : "loss"}`}>{winner? `${winner?.toUpperCase()} WON`: "DRAW"} </div>
             <div>
                {currentWon > 0 ? "YOU WIN" : " YOU LOSE"}{" "}
               <span className="amount">{currentWon > 0 ? currentWon : costPerBet}</span>
