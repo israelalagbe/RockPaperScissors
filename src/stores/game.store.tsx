@@ -54,7 +54,7 @@ const TodosProvider: FC<GameProviderProps> = (props) => {
   const computeWinner = useCallback(() => {
     
     const { choices, computerChoice } = state;
-    console.log('currentWon',computerChoice, state );
+     
     if(!computerChoice) return;
 
     let playerWon = false;
@@ -115,7 +115,7 @@ const TodosProvider: FC<GameProviderProps> = (props) => {
 
   useEffect(() => {
     if(state.step === 'play') {
-      setTimeout(computeWinner, 1500);
+      setTimeout(computeWinner, 2000);
     }
   }, [state.step, computeWinner]);
 

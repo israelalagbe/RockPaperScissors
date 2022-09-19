@@ -6,6 +6,7 @@ import "./index.scss";
 interface ChoiceProps {
   choice: ChoiceType;
   active?: boolean;
+  selected?: boolean;
   onSelect: (choice: ChoiceType) => void;
 }
 
@@ -16,7 +17,7 @@ function Choice(props: ChoiceProps) {
       onClick={onSelect}
       className={`choice ${props.choice} ${props.active ? "active" : ""}`}
     >
-      <span className={`choice-cost ${props.active ? 'v-visible' : ''}`}>{costPerBet}</span>
+      <span className={`choice-cost ${props.selected ? 'v-visible' : ''}`}>{costPerBet}</span>
       <span className="choice-text">{props.choice.toUpperCase()}</span>
     </button>
   );
