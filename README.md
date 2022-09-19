@@ -1,7 +1,7 @@
-# Getting Started with Create React App
+# Getting Started with installing the Rock Paper Scissors App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+## Screenshots
+<img src="public/img/screenshot.png" />
 ## Available Scripts
 
 In the project directory, you can run:
